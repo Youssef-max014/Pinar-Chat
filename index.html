@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinar Chat</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            direction: rtl;
+        }
+        .header {
+            height: 100vh;
+            background-image: url('3.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 90%;
+        }
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .text {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            
+        }
+        .about {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: right;
+            height:50vh;
+        }
+        .about .content {
+            max-width: 800px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .about h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+        }
+        .about img {
+            max-width: 190px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .download {
+            padding: 40px 20px;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+        .download h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .download p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contact {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact label {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .contact input[type="text"],
+        .contact input[type="email"],
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .contact button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الهدر مع روابط الصفحات -->
+    <div class="navbar">
+        <a href="#contact">اتصل بنا</a>
+        <a href="#download">التحميل</a>
+        <a href="#about">من نحن</a>
+        <a href="#home">الصفحة الرئيسية</a>
+    </div>
+
+    <!-- القسم الرئيسي مع الخلفية -->
+    <div id="home" class="header">
+        <div class="container">
+            <div class="logo">Pinar Chat</div>
+            <div class="text">مرحباً بكم في Pinar Chat!</div>
+            <a href="https://www.appcreator24.com/app3124621-ckbg2z" class="button">تحميل التطبيق</a>
+        </div>
+    </div>
+
+    <!-- قسم "About" مع الصورة -->
+    <div id="about" class="about">
+        <div class="content">
+            <img src="2.jpg" alt="Your Image">
+            <div>
+                <h2>من نحن</h2>
+                <p>
+                    Pinar Chat هو منصة تواصل اجتماعي مبتكرة توفر للمستخدمين تجربة فريدة من نوعها
+                    في التواصل والمشاركة. هدفنا هو تمكين الأشخاص من التواصل بشكل أعمق
+                    والتفاعل بشكل أكثر فعالية.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- قسم "التحميل" مع زر -->
+    <div id="download" class="download">
+        <h2>التحميل</h2>
+        <p>
+            قم بتحميل تطبيقنا من خلال الروابط التالية للحصول على تجربة مميزة في التواصل والمشاركة.
+        </p>
+        <a href="https://www.appcreator24.com/app3124621-ckbg2z" class="button">انتقل إلى صفحة التحميل</a>
+    </div>
+
+    <!-- قسم "اتصل بنا" المعدل -->
+    <div id="contact" class="contact">
+        <h2>اتصل بنا</h2>
+        <form>
+            <label for="name">الاسم</label>
+            <input type="text" id="name" name="name" placeholder="أدخل اسمك">
+
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني">
+
+            <label for="message">الرسالة</label>
+            <textarea id="message" name="message" rows="5" placeholder="أدخل رسالتك"></textarea>
+
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+
+</body>
+</html>
